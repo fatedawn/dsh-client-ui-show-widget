@@ -35,7 +35,7 @@ Architecture and request flows, option matrices, sequence and state diagrams, ga
 Add the market index URL in DSH's plugin market:
 
 ```
-<MARKET_INDEX_URL>
+https://raw.githubusercontent.com/fatedawn/dsh-client-ui-show-widget/main/market/index.json
 ```
 
 Then install `dsh-client-ui-show-widget` from Discover. The index entry pins this repository to an exact commit, so every install reproduces the same code.
@@ -43,7 +43,7 @@ Then install `dsh-client-ui-show-widget` from Discover. The index entry pins thi
 Manual install, from a profile directory:
 
 ```bash
-pnpm add dsh-client-ui-show-widget@git+https://github.com/fatedawn/dsh-client-ui-show-widget.git#<commit>
+pnpm add dsh-client-ui-show-widget@git+https://github.com/fatedawn/dsh-client-ui-show-widget.git#22ff0cf2a9a77241a13485e21468221fde5ad223
 ```
 
 ## How it works

@@ -1,0 +1,96 @@
+{
+  "format": 1,
+  "title": {
+    "en": "YG DSH Plugins",
+    "zh": "YG 的 DSH 插件市场"
+  },
+  "description": {
+    "en": "Plugins that make DeepSeek Harness render more and describe less.",
+    "zh": "让 DeepSeek Harness 多渲染、少空谈的插件集合。"
+  },
+  "metadata": {
+    "categories": {
+      "visualization": {
+        "title": {
+          "en": "Visualization",
+          "zh": "可视化"
+        }
+      }
+    },
+    "labels": {
+      "mermaid": {
+        "title": {
+          "en": "Mermaid",
+          "zh": "Mermaid"
+        }
+      },
+      "katex": {
+        "title": {
+          "en": "KaTeX",
+          "zh": "KaTeX"
+        }
+      },
+      "offline": {
+        "title": {
+          "en": "Offline",
+          "zh": "离线运行"
+        }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-client-ui-show-widget",
+      "title": {
+        "en": "Show Widget",
+        "zh": "内联小组件"
+      },
+      "description": {
+        "en": "Renders model-authored HTML/SVG as inline cards in the conversation, with Mermaid diagrams and KaTeX math bundled offline behind a sandboxed CSP frame.",
+        "zh": "把模型产出的 HTML/SVG 渲染成会话内联卡片，内置 Mermaid 图表与 KaTeX 公式，运行在沙箱 CSP 帧内，零外链请求。"
+      },
+      "author": "fatedawn",
+      "homepage": "https://github.com/fatedawn/dsh-client-ui-show-widget#readme",
+      "repository": {
+        "url": "https://github.com/fatedawn/dsh-client-ui-show-widget"
+      },
+      "metadata": {
+        "category": "visualization",
+        "keywords": [
+          "widget",
+          "mermaid",
+          "katex",
+          "diagram",
+          "chart",
+          "table",
+          "svg",
+          "inline",
+          "visualization",
+          "小组件",
+          "图表",
+          "公式"
+        ],
+        "labels": [
+          "mermaid",
+          "katex",
+          "offline"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.2.0",
+          "publishTimestamp": 1793862573,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/fatedawn/dsh-client-ui-show-widget",
+            "commit": "22ff0cf2a9a77241a13485e21468221fde5ad223"
+          },
+          "engines": {
+            "dsh": ">=44.0.0"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -67,7 +67,7 @@
 在 DSH 的插件市场里添加索引 URL：
 
 ```
-<MARKET_INDEX_URL>
+https://raw.githubusercontent.com/fatedawn/dsh-client-ui-show-widget/main/market/index.json
 ```
 
 然后在「发现」里搜索 `show widget` 或直接安装 `dsh-client-ui-show-widget`。索引条目指向本仓库的固定 commit，安装即复现同一份代码。
@@ -77,7 +77,7 @@
 在 profile 目录（例如 `~/.dsh/profiles/desktop`）执行：
 
 ```bash
-pnpm add dsh-client-ui-show-widget@git+https://github.com/fatedawn/dsh-client-ui-show-widget.git#<commit>
+pnpm add dsh-client-ui-show-widget@git+https://github.com/fatedawn/dsh-client-ui-show-widget.git#22ff0cf2a9a77241a13485e21468221fde5ad223
 ```
 
 或本地开发时直接链接：
