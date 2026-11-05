@@ -1,0 +1,6 @@
+# Keep the checkout byte-identical on every platform; the bundled artifact is
+# a single 8 MB file whose content is what the host loads.
+* text=auto eol=lf
+lib/client.js -text
+vendor/*.min.js -text
+vendor/*.min.css -text
