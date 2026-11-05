@@ -43,7 +43,7 @@ Then install `dsh-client-ui-show-widget` from Discover. The index entry pins thi
 Manual install, from a profile directory:
 
 ```bash
-pnpm add dsh-client-ui-show-widget@git+https://github.com/fatedawn/dsh-client-ui-show-widget.git#22ff0cf2a9a77241a13485e21468221fde5ad223
+pnpm add dsh-client-ui-show-widget@git+https://github.com/fatedawn/dsh-client-ui-show-widget.git#b4da5cac67d8830b71480ba88566d20a797c99d8
 ```
 
 ## How it works

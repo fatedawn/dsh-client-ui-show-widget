@@ -77,7 +77,7 @@ https://raw.githubusercontent.com/fatedawn/dsh-client-ui-show-widget/main/market
 在 profile 目录（例如 `~/.dsh/profiles/desktop`）执行：
 
 ```bash
-pnpm add dsh-client-ui-show-widget@git+https://github.com/fatedawn/dsh-client-ui-show-widget.git#22ff0cf2a9a77241a13485e21468221fde5ad223
+pnpm add dsh-client-ui-show-widget@git+https://github.com/fatedawn/dsh-client-ui-show-widget.git#b4da5cac67d8830b71480ba88566d20a797c99d8
 ```
 
 或本地开发时直接链接：
