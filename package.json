@@ -1,0 +1,41 @@
+{
+  "name": "dsh-client-ui-show-widget",
+  "version": "0.2.0",
+  "description": "DSH 插件：注册 show_widget 工具，并在会话内联渲染 HTML/SVG 小组件，内置 Mermaid 图表与 KaTeX 公式。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "vendor/LICENSE.mermaid",
+    "vendor/LICENSE.katex"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-tool"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "scripts": {
+    "build": "node scripts/bundle-vendor.mjs",
+    "test": "node scripts/verify-render.mjs && node scripts/verify-tail.mjs && node scripts/verify-tool-runtime.mjs"
+  }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>blob 沙箱验证</title>
+<style>body{font:14px system-ui;padding:16px}iframe{width:100%;height:120px;border:1px solid #ccc}</style>
+<p id="out">运行中…</p>
+<iframe id="frame" sandbox="allow-scripts"></iframe>
+<script>
+// 造一个裸 UMD 风格的库，验证 sandbox 内的 srcdoc 能否加载 blob: 脚本。
+const libSource = 'window.__BLOB_LOADED__ = (window.__BLOB_LOADED__ || 0) + 1; window.__LIB_KIND__ = "vendor-lib";'
+const url = URL.createObjectURL(new Blob([libSource], { type: 'text/javascript' }))
+
+const doc = [
+  '<!doctype html><html><head><meta charset="utf-8">',
+  '<style>html,body{margin:0;font:14px system-ui}</style>',
+  '</head><body><div id="root">probe</div>',
+  '<script src="' + url + '"><\/script>',
+  '<script>',
+  'var ok = typeof window.__LIB_KIND__ === "string";',
+  'parent.postMessage({ type: "probe", ok: ok, kind: window.__LIB_KIND__ || null }, "*");',
+  '<\/script>',
+  '</body></html>',
+].join('')
+
+document.getElementById('frame').srcdoc = doc
+
+window.addEventListener('message', (event) => {
+  if (event.data?.type !== 'probe') return
+  document.getElementById('out').textContent = event.data.ok
+    ? 'PASS：srcdoc 内成功加载 blob 脚本，全局可见 ' + event.data.kind
+    : 'FAIL：blob 脚本未执行'
+  document.title = event.data.ok ? 'PASS' : 'FAIL'
+})
+</script>

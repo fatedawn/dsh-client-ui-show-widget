@@ -1,0 +1,37 @@
+{
+  "dataset": [
+    {
+      "tool": "read_file",
+      "purpose": "读取文件",
+      "status": "可用"
+    },
+    {
+      "tool": "write_file",
+      "purpose": "写入文件",
+      "status": "可用"
+    },
+    {
+      "tool": "bash",
+      "purpose": "执行命令",
+      "status": "可用"
+    },
+    {
+      "tool": "todo_write",
+      "purpose": "维护待办",
+      "status": "可用"
+    },
+    {
+      "tool": "show_widget",
+      "purpose": "渲染小组件",
+      "status": "新增"
+    }
+  ],
+  "armA_markdown": "| 工具 | 用途 | 状态 |\n| --- | --- | --- |\n| read_file | 读取文件 | 可用 |\n| write_file | 写入文件 | 可用 |\n| bash | 执行命令 | 可用 |\n| todo_write | 维护待办 | 可用 |\n| show_widget | 渲染小组件 | 新增 |",
+  "armB_widget_args": {
+    "title": "工具清单",
+    "widget_code": "<table style=\"border-collapse:collapse;width:100%;font:13px/1.6 system-ui,sans-serif\">\n<thead><tr>\n<th style=\"text-align:left;padding:7px 12px;border-bottom:2px solid rgba(127,127,127,.6)\">工具</th>\n<th style=\"text-align:left;padding:7px 12px;border-bottom:2px solid rgba(127,127,127,.6)\">用途</th>\n<th style=\"text-align:left;padding:7px 12px;border-bottom:2px solid rgba(127,127,127,.6)\">状态</th>\n</tr></thead>\n<tbody>\n<tr><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">read_file</td><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">读取文件</td><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">可用</td></tr>\n<tr><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">write_file</td><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">写入文件</td><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">可用</td></tr>\n<tr><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">bash</td><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">执行命令</td><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">可用</td></tr>\n<tr><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">todo_write</td><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">维护待办</td><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">可用</td></tr>\n<tr><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">show_widget</td><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">渲染小组件</td><td style=\"padding:7px 12px;border-bottom:1px solid rgba(127,127,127,.25)\">新增</td></tr>\n</tbody>\n</table>",
+    "loading_messages": [
+      "正在整理工具清单"
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+- insert:
+    - id: client-ui-show-widget
+      name: 'dsh-client-ui-show-widget'
